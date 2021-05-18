@@ -1,5 +1,5 @@
-import React, { useEffect, useContext,useState } from 'react'
-import { useHistory, Link } from 'react-router-dom'
+import React, { useEffect,useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
 import { BASE_URL, GET_ALL_URL } from './utils/apiendpoints'
 import { getrequest } from './utils/apirequests'
@@ -9,7 +9,7 @@ import Lifetimeincome from './Lifetimecomponents/Lifetimeincome'
 const LifetimeRecords = () => {
     const { user } = useAuth0();
     // const { Lifetimeexpensedata, setLifetimeexpensedata, Lifetimeincomedata, setLifetimeincomedata } = useContext(Inputfieldcontext);
-    const history = useHistory();
+   
 
 
 

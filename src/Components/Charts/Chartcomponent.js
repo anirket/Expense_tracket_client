@@ -63,7 +63,7 @@ const ChartComponent = ({ component }) => {
             ])
         }
 
-    }, [month, incomedatadynamic, expensedatadynamic])
+    }, [month, incomedatadynamic, expensedatadynamic,component])
 
 
     const data = {
