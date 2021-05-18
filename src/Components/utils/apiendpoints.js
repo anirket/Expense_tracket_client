@@ -1,0 +1,5 @@
+export const BASE_URL = "https://expensetrackerproject1.herokuapp.com"
+export const POST_URL = "/transaction"
+export const DELETE_URL = "/transactiondelete/"
+export const GET_URL = "/alltransactions/"
+export const GET_ALL_URL = "/alltransactionsonrender/"
