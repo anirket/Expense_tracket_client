@@ -23,7 +23,7 @@ const Tracker = () => {
                 </Link>
 
                 <div className="durationinput flex justify-center w-screen flex-col items-center md:mb-10">
-                    <Dropdown content={month} initialvalue={"January"} index={10} />
+                    <Dropdown content={month} initialvalue={"January"} index={50} />
                 </div>
 
 
