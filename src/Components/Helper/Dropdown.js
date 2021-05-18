@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { IoIosArrowDropdown } from "react-icons/io";
 import { Inputfieldcontext } from '../Contexts/InputfieldContoller';
-const Dropdown = ({ content, index }) => {
+const Dropdown = ({ content, index = 30 }) => {
 
     //To toggle dropdown on click
     const [dropdowntogglevalue, setdropdowntogglevalue] = useState(false);
@@ -21,7 +21,7 @@ const Dropdown = ({ content, index }) => {
                     <IoIosArrowDropdown />
                 </div>
             </button>
-            <ul className={`z-${index}  h-52 overflow-scroll dropdown-menu absolute text-gray-700 pt-1 ` + (dropdowntogglevalue ? ("block") : ("hidden"))}>
+            <ul className={`z-30  h-52 overflow-scroll dropdown-menu absolute text-gray-700 pt-1 ` + (dropdowntogglevalue ? ("block") : ("hidden"))}>
                 {content.map((contentvalue) => (
                     <li key={contentvalue}
                         className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap border-b-2 border-gray-300 cursor-pointer"
