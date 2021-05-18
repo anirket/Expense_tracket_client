@@ -9,7 +9,7 @@ ReactDOM.render(
     <Auth0Provider
         domain={process.env.REACT_APP_DOMAIN}
         clientId={process.env.REACT_APP_CLIENTID}
-        redirectUri="http://localhost:3000/tracker"
+        redirectUri="https://paisabachao.vercel.app/tracker"
     >
         <App />
     </Auth0Provider>
